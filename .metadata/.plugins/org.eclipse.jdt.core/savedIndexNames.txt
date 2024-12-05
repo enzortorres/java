@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\enzor\OneDrive\Documents\Estudos\java\.metadata\.plugins\org.eclipse.jdt.core
+2965420843.index
+1865797976.index
+2505770744.index
+873310007.index
+1872563506.index

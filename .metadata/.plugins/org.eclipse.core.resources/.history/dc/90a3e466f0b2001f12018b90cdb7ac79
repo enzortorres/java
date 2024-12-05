@@ -1,0 +1,5 @@
+public class PrimeiroPrograma {
+	public static void main(String[] args) {
+		System.out.println("\033[31mTestando\nSom\nSom\033[m");
+	}
+}
