@@ -9,15 +9,14 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class helloWorld extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-
-	/**
-	 * Launch the application.
-	 */
+	
+	// Launch the application
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -31,9 +30,7 @@ public class helloWorld extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	// Create the frame
 	public helloWorld() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -45,10 +42,11 @@ public class helloWorld extends JFrame {
 		
 		
 		
-		JLabel lblMessage = new JLabel("Here will show the message!");
+		JLabel lblMessage = new JLabel("Here will show the message!\r\n");
+		lblMessage.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMessage.setFont(new Font("Tahoma", Font.PLAIN, 24));
 		lblMessage.setForeground(new Color(255, 0, 0));
-		lblMessage.setBounds(60, 36, 314, 27);
+		lblMessage.setBounds(60, 36, 307, 29);
 		contentPane.add(lblMessage);
 		
 		JButton btn = new JButton("Click here");
