@@ -119,5 +119,24 @@ public class Main {
         int meuInt = Integer.parseInt(meuString);
 
         String minhaString = String.valueOf(meuInt);
+
+        Carro meuCarro1 = new Carro("Fusca");
+        Carro meuCarro2 = new Carro("Sandero");
+        Carro meuCarro3 = new Carro("Gol");
+
+        meuCarro1.acelerar();
+        meuCarro2.acelerar();
+        meuCarro3.acelerar();
+    }
+}
+
+class Carro {
+    String modelo;
+    public Carro(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public void acelerar() {
+        System.out.println(this.modelo + " acelerando!");
     }
 }
