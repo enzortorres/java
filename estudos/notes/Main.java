@@ -46,7 +46,6 @@ public class Main {
 
 //        ! VETORES/ARRAYS
 
-
         int[] idades = {16,17,18,19,20};
 
         idades[0] = 20;
@@ -120,6 +119,8 @@ public class Main {
 
         String minhaString = String.valueOf(meuInt);
 
+//        ! OOP ( CLASSES, OBJETOS, MÉTODOS )
+
         Carro meuCarro1 = new Carro("Fusca");
         Carro meuCarro2 = new Carro("Sandero");
         Carro meuCarro3 = new Carro("Gol");
@@ -132,6 +133,7 @@ public class Main {
 
 class Carro {
     String modelo;
+
     public Carro(String modelo) {
         this.modelo = modelo;
     }
