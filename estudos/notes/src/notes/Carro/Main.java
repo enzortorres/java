@@ -1,3 +1,5 @@
+package notes.Carro;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -130,6 +132,11 @@ public class Main {
         meuCarro3.acelerar();
     }
 }
+
+// public -> acessível de todo lugar
+// default -> quando eu não defino, ele segue esse daqui
+// private -> acessível somente dentro da classe que foi definido
+// protected -> acessível por todo mundo que está no mesmo pacote
 
 class Carro {
     String modelo;
