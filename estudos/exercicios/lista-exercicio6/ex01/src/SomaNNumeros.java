@@ -10,11 +10,11 @@ public class SomaNNumeros {
 
         System.out.print("Somando os valores: ");
         for (int i = 1; i <= number; i++) {
-            System.out.printf("%d ", i);
+            System.out.print(i + (i < number ? " + " : " = "));
             soma += i;
         }
 
-        System.out.printf("\nResulta em: %d", soma);
+        System.out.print(soma);
 
 
     }

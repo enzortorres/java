@@ -8,9 +8,11 @@ public class Tabuada {
 
             System.out.print("Digite um número: ");
             int number = sc.nextInt();
+            int contador = 1;
 
-            for (int i = 1; i <= 10; i++) {
-                System.out.printf("%d x %d = %d\n", number, i, number * i);
+            while (contador <= 10) {
+                System.out.printf("%d x %d = %d\n", number, contador, number * contador);
+                contador++;
             }
         } catch (Exception e) {
             System.out.println("Digite somente números.");

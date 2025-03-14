@@ -6,12 +6,14 @@ public class ContagemRegressiva {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite um número para começar a contagem: ");
-        int contagemInicial = sc.nextInt();
+        int contagem = sc.nextInt();
 
-        for (int i = contagemInicial; i >= 0; i--)  {
-            System.out.println(i);
+        do {
+            System.out.println(contagem);
+            if (contagem == 0) break;
             Thread.sleep(1000);
-        }
+            contagem--;
+        } while (contagem >= 0);
         System.out.println("Acabou!");
     }
 }
