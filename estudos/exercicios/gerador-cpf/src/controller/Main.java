@@ -23,7 +23,6 @@ public class Main {
         cpf_string += primeiro_digito;
 
         // ? Calculo para gerar o segundo digito pós '-'
-
         int soma_segundo_digito = 0;
 
         for (int i = 0; i < 10; i++) {
@@ -32,12 +31,12 @@ public class Main {
         }
 
         int resultado_segundo_digito = soma_segundo_digito % 11;
-        int segundo_digito = (resultado_segundo_digito < 2) ? 0 : 11 - resultado_segundo_digito; // Fórmula para o segundo dígito
+        int segundo_digito = (resultado_segundo_digito < 2) ? 0 : 11 - resultado_segundo_digito; // ? Fórmula para o segundo dígito
 
         cpf_string += segundo_digito;
         String cpf_formatado = cpf_string.substring(0, 3) + "." + cpf_string.substring(3, 6) + "." + cpf_string.substring(6, 9) + "-" + cpf_string.substring(9, 11);
 
-        System.out.println(cpf_formatado);
+        System.out.printf("CPF gerado: %s", cpf_formatado);
     }
 }
 
