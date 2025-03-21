@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151a6c8e-8214-4918-8d77-a2820269bfbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ex01/src/SomaNNumeros.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex01/src/SomaNNumeros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Tabuada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Tabuada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex03/src/controller/ContagemRegressiva.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/controller/ContagemRegressiva.java" afterDir="false" />
-    </list>
+    <list default="true" id="151a6c8e-8214-4918-8d77-a2820269bfbf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +47,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
@@ -69,6 +64,7 @@
       <workItem from="1741964761097" duration="8000" />
       <workItem from="1741964950912" duration="324000" />
       <workItem from="1741965610984" duration="13000" />
+      <workItem from="1742506618925" duration="43000" />
     </task>
     <servers />
   </component>
