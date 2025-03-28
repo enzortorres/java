@@ -1,15 +1,17 @@
 package controller;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class aula07 {
     public static void main(String[] args) {
-        int[] numbers = new int[10];
-        ArrayList<Integer> numbers2 = new ArrayList<Integer>();
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> numbers = new ArrayList<>(); // Opcional colocar o tipo pela segunda vez
+
         for (int i = 0; i < 3;i++) {
-            numbers2.add(i);
+            numbers.add(i);
         }
         for (int i = 0; i < 3;i++) {
+            System.out.println(numbers.get(i));
         }
-        System.out.println(numbers2.get(i));
     }
 }
