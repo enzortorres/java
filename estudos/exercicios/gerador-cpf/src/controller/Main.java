@@ -24,7 +24,7 @@ public class Main {
 
         // ? Calculo para gerar o segundo digito pós '-'
         int soma_segundo_digito = 0;
-
+    
         for (int i = 0; i < 10; i++) {
             int digito = cpf_string.charAt(i) - '0';
             soma_segundo_digito += digito * (11 - i);
