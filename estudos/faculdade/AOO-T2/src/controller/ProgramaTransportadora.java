@@ -44,22 +44,27 @@ public class ProgramaTransportadora {
         int opcao = 0;
 
         try {
+            do {
+                System.out.print(
+                    "=== DEPARTAMENTO OPERACIONAL ===" + 
+                    "Qual ação deseja realizar" + 
+                    "1 - Cadastrar País" + 
+                    "2 - Cadastrar Cidade" + 
+                    "3 - Cadastrar Armazém" + 
+                    ">>> ");
+                opcao = sc.nextInt();
 
-            System.out.print(
-                "=== DEPARTAMENTO OPERACIONAL ===" + 
-                "Qual ação deseja realizar" + 
-                "1 - Cadastrar País" + 
-                "2 - Cadastrar Cidade" + 
-                "3 - Cadastrar Armazém" + 
-                ">>> ");
-            opcao = sc.nextInt();
-        
-            switch(opcao) {
-                case 1 -> cadastrarPais();
-                case 2 -> cadastrarCidade();
-                case 3 -> cadastrarArmazem();
-                default -> System.out.println("Opção inválida.");
-            }
+                switch(opcao) {
+                    case 1 -> cadastrarPais();
+                    case 2 -> cadastrarCidade();
+                    case 3 -> cadastrarArmazem();
+                    case 4 ->  {
+                        System.out.println("Encerrando o programa..."); 
+                        return;
+                    }
+                    default -> System.out.println("Opção inválida.");
+                }
+            } while(opcao != 4);
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
         }
@@ -70,22 +75,25 @@ public class ProgramaTransportadora {
         int opcao = 0;
 
         try {
-
-            System.out.print(
-                "=== DEPARTAMENTO DE MATERIAL ===" + 
-                "Qual ação deseja realizar" + 
-                "1 - Cadastrar Produto" + 
-                "2 - Cadastrar Item" + 
-                ">>> ");
-            opcao = sc.nextInt();
-        
-            switch(opcao) {
-                case 1 -> {
-                    cadastrarProduto();
+            do {
+                System.out.print(
+                    "=== DEPARTAMENTO DE MATERIAL ===" + 
+                    "Qual ação deseja realizar" + 
+                    "1 - Cadastrar Produto" + 
+                    "2 - Cadastrar Item" + 
+                    ">>> ");
+                opcao = sc.nextInt();
+                
+                switch(opcao) {
+                    case 1 -> cadastrarProduto();
+                    case 2 -> cadastrarItem();
+                    case 3 -> {
+                        System.out.println("Encerrando o programa..."); 
+                        return;
+                    }
+                    default -> System.out.println("Opção inválida.");
                 }
-                case 2 -> cadastrarItem();
-                default -> System.out.println("Opção inválida.");
-            }
+            }while (opcao != 3);
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
         }
@@ -96,42 +104,47 @@ public class ProgramaTransportadora {
         int opcao = 0;
 
         try {
-
-            System.out.print(
-                "=== DEPARTAMENTO DE LOGÍSITICA ===" + 
-                "Qual ação deseja realizar" + 
-                "1 - Cadastrar Empresa" + 
-                "2 - Cadastrar Agente" + 
-                "2 - Cadastrar Transporte" + 
-                ">>> ");
-            opcao = sc.nextInt();
-        
-            switch(opcao) {
-                case 1 -> {
-                    int novoAgente = -1;
-                    do { 
-                        System.out.print(
-                            "Deseja cadastrar um agente novo? " +
-                            "1 - Sim " +
-                            "2 - Não" +
-                            ">>> "   
-                        );
-                        novoAgente = sc.nextInt();
-
-                        if (novoAgente != 1 && novoAgente != 2)
-                            System.out.println("Opção inválida.");
-                    } while (novoAgente != 1 && novoAgente != 2);
+            do { 
+                System.out.print(
+                    "=== DEPARTAMENTO DE LOGÍSITICA ===" + 
+                    "Qual ação deseja realizar" + 
+                    "1 - Cadastrar Empresa" + 
+                    "2 - Cadastrar Agente" + 
+                    "3 - Cadastrar Transporte" + 
+                    ">>> ");
+                opcao = sc.nextInt();
                     
-                    if (novoAgente == 1) {
-                        cadastrarAgente();
+                switch(opcao) {
+                    case 1 -> {
+                        int novoAgente = -1;
+                        do { 
+                            System.out.print(
+                                "Deseja cadastrar um agente novo? " +
+                                "1 - Sim " +
+                                "2 - Não" +
+                                ">>> "
+                                );
+                            novoAgente = sc.nextInt();
+                            
+                            if (novoAgente != 1 && novoAgente != 2)
+                                System.out.println("Opção inválida.");
+                        } while (novoAgente != 1 && novoAgente != 2);
+                            
+                        if (novoAgente == 1) {
+                            cadastrarAgente();
+                        }
+                        cadastrarPais();
+                        cadastrarEmpresa();
                     }
-                    cadastrarPais();
-                    cadastrarEmpresa();
-                }
-                case 2 -> cadastrarAgente();
-                case 3 -> cadastrarTransporte();
-                default -> System.out.println("Opção inválida.");
-            }
+                    case 2 -> cadastrarAgente();
+                    case 3 -> cadastrarTransporte();
+                    case 4 -> {
+                        System.out.println("Encerrando o programa..."); 
+                        return;
+                    }
+                    default -> System.out.println("Opção inválida.");
+                }  
+            } while (opcao != 4);
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
         }
