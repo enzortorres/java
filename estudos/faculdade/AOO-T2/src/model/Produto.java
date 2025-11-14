@@ -53,4 +53,28 @@ public class Produto {
         } 
         System.out.println("Item não encontrado.");
     }
+
+    public void analisar() {
+        setSituacao("Em análise");
+    }
+
+    public void reprovar() {
+        setSituacao("Reprovado");
+    }
+
+    public void aprovar() {
+        setSituacao("Aprovado");
+    }
+
+    public void vender() {
+        setSituacao("Vendido");
+    }
+
+    public void transportar() {
+        setSituacao("Em transporte");
+    }
+
+    public void receber() {
+        setSituacao("Recebido");
+    }
 }

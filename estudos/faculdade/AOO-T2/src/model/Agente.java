@@ -2,14 +2,12 @@ package model;
 
 public class Agente {
     private int idAgente;
-    private String nome, situacao;
-    private Empresa empresaResponsavel;
+    private String nome, situacao, funcao;
 
-    public Agente(int idAgente, String nome, String situacao, Empresa empresaResponsavel) {
+    public Agente(int idAgente, String nome, String situacao) {
         this.idAgente = idAgente;
         this.nome = nome;
         this.situacao = situacao;
-        this.empresaResponsavel = empresaResponsavel;
     }
 
     public int getIdAgente() {
@@ -35,12 +33,36 @@ public class Agente {
     public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
-
-    public Empresa getEmpresaResponsavel() {
-        return empresaResponsavel;
+    
+    public String getFuncao() {
+        return funcao;
     }
 
-    public void setEmpresaResponsavel(Empresa empresaResponsavel) {
-        this.empresaResponsavel = empresaResponsavel;
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+
+    public void analisar() {
+        setSituacao("Em análise");
+    }
+
+    public void reprovar() {
+        setSituacao("Reprovado");
+    }
+
+    public void aprovar() {
+        setSituacao("Aprovado");
+    }
+
+    public void atribuir(String funcao) {
+        setFuncao(funcao);
+    }
+
+    public void transportar() {
+        setSituacao("Em transporte");
+    }
+
+    public void receber() {
+        setSituacao("Recebido");
     }
 }
