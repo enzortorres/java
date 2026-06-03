@@ -1,0 +1,34 @@
+id,codigo,nome,posicao,gols,titulos,gols_selecao,valor_pico,premios,super_trunfo,jogador_id
+1,ATK01,Romário,Atacante,593,20,55,120,78,false,5041
+2,ATK02,Bebeto,Atacante,398,18,39,40,65,false,5042
+3,ATK03,Garrincha,Ponta,250,15,12,30,82,false,5
+4,ATK04,Jairzinho,Ponta,195,14,33,20,72,false,4503
+5,ATK05,Ronaldo,Atacante,414,17,62,230,96,false,3516
+6,ATK06,Adriano,Atacante,291,14,27,80,70,false,55012
+7,ATK07,Robinho,Atacante,220,12,29,90,62,false,20532
+8,ATK08,Neymar Jr,Atacante,445,15,79,220,88,false,159665
+9,ATK09,Vinicius Jr,Atacante,180,10,28,200,85,false,874655
+10,ATK10,Tostão,Atacante,250,14,32,20,78,false,4504
+11,ATK11,Rodrygo,Atacante,120,8,14,120,72,false,829332
+12,ATK12,Zico,Meia-Atacante,508,22,52,60,88,false,180
+13,MEI01,Ronaldinho Gaúcho,Meia,282,21,33,200,95,false,127506
+14,MEI02,Rivaldo,Meia,365,19,35,120,90,false,23006
+15,MEI03,Kaká,Meia,289,16,29,180,88,false,80820
+16,MEI04,Falcão,Meia,200,12,34,25,75,false,4500
+17,MEI05,Sócrates,Meia,297,13,22,20,80,false,4501
+18,MEI06,Gerson,Meia,150,15,14,20,70,false,4502
+19,MEI07,Clodoaldo,Meia,100,12,10,15,65,false,4506
+20,VOL01,Casemiro,Volante,58,21,17,120,82,false,196038
+21,VOL02,Gilberto Silva,Volante,35,14,3,30,68,false,4507
+22,VOL03,Dunga,Volante,50,12,6,20,70,false,4508
+23,VOL04,Émerson,Volante,35,12,5,35,62,false,4509
+24,DEF01,Roberto Carlos,Lateral,115,24,11,80,82,false,12345
+25,DEF02,Cafu,Lateral,65,22,5,45,78,false,12346
+26,DEF03,Thiago Silva,Zagueiro,45,18,10,110,80,false,165501
+27,DEF04,Lúcio,Zagueiro,55,15,7,60,72,false,12347
+28,DEF05,Carlos Alberto,Zagueiro,80,16,8,20,72,false,4505
+29,GOL01,Taffarel,Goleiro,0,12,0,20,70,false,13
+30,GOL02,Dida,Goleiro,0,14,0,30,68,false,7001
+31,GOL03,Júlio César,Goleiro,0,10,0,25,65,false,8901
+32,GOL04,Alisson,Goleiro,2,12,0,100,80,false,394471
+33,STR01,Pelé,Atacante,767,30,95,300,100,true,9
