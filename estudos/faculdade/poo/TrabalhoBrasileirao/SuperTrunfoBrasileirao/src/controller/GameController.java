@@ -33,7 +33,7 @@ public class GameController {
         return Collections.unmodifiableList(cartasDisponiveis);
     }
 
-    /** Sorteia um jogador para a máquina, excluindo o do jogador humano. */
+    /** Sorteia um país para a máquina, excluindo o do jogador. */
     public Carta sortearCartaMaquina(Carta cartaJogador) {
         List<Carta> opcoes = new ArrayList<>(cartasDisponiveis);
         opcoes.remove(cartaJogador);
@@ -65,8 +65,8 @@ public class GameController {
     }
 
     private int[] atributos(Carta c) {
-        return new int[]{ c.getGols(), c.getTitulos(), c.getGolsSelecao(),
-                          c.getValorPico(), c.getPremios() };
+        return new int[]{ c.getBiodiversidade(), c.getEconomia(), c.getTerritorio(),
+                          c.getPopulacao(), c.getEsportes() };
     }
 
     public int getPontosJogador() { return pontosJogador; }

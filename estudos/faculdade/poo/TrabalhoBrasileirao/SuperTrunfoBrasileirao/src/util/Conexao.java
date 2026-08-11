@@ -5,7 +5,7 @@ import java.net.URISyntaxException;
 
 public class Conexao {
 
-    private static final String CSV_FILENAME = "supertrunfo_brasileirao.csv";
+    private static final String CSV_FILENAME = "supertrunfo_paises.csv";
 
     public static String getCaminhoCsv() {
         File f = new File("data" + File.separator + CSV_FILENAME);

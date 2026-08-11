@@ -16,7 +16,6 @@ public class MainFrame extends JFrame {
 
     private static final String BASE_IMG_URL = "https://flagcdn.com/w320/";
 
-    // ── Paleta ──────────────────────────────────────────────────────────────────
     private static final Color BG          = new Color(245, 252, 245);
     private static final Color VERDE_ESC   = new Color(0,  90, 25);
     private static final Color VERDE_MED   = new Color(0, 140, 50);
@@ -33,11 +32,9 @@ public class MainFrame extends JFrame {
         "Títulos", "Gols Copa", "Participações", "Pts. FIFA", "Estrelas"
     };
 
-    // ── Estado ──────────────────────────────────────────────────────────────────
     private final GameController ctrl;
     private Carta cartaSelecionada;
 
-    // Caches
     private final Map<String, BufferedImage> imageCache = new HashMap<>();
     private final Map<String, JButton>       botoesMap  = new HashMap<>();
 

@@ -4,42 +4,42 @@ public class Carta {
     private int id;
     private String codigo;
     private String nome;
-    private String posicao;
-    private int gols;
-    private int titulos;
-    private int golsSelecao;
-    private int valorPico;
-    private int premios;
+    private String continente;
+    private int biodiversidade;
+    private int economia;
+    private int territorio;
+    private int populacao;
+    private int esportes;
     private boolean superTrunfo;
-    private String wikiPage;
+    private String paisCodigo;
 
-    public Carta(int id, String codigo, String nome, String posicao,
-                 int gols, int titulos, int golsSelecao, int valorPico,
-                 int premios, boolean superTrunfo, String wikiPage) {
+    public Carta(int id, String codigo, String nome, String continente,
+                 int biodiversidade, int economia, int territorio, int populacao,
+                 int esportes, boolean superTrunfo, String paisCodigo) {
         this.id = id;
         this.codigo = codigo;
         this.nome = nome;
-        this.posicao = posicao;
-        this.gols = gols;
-        this.titulos = titulos;
-        this.golsSelecao = golsSelecao;
-        this.valorPico = valorPico;
-        this.premios = premios;
+        this.continente = continente;
+        this.biodiversidade = biodiversidade;
+        this.economia = economia;
+        this.territorio = territorio;
+        this.populacao = populacao;
+        this.esportes = esportes;
         this.superTrunfo = superTrunfo;
-        this.wikiPage = wikiPage;
+        this.paisCodigo = paisCodigo;
     }
 
-    public int getId()             { return id; }
-    public String getCodigo()      { return codigo; }
-    public String getNome()        { return nome; }
-    public String getPosicao()     { return posicao; }
-    public int getGols()           { return gols; }
-    public int getTitulos()        { return titulos; }
-    public int getGolsSelecao()    { return golsSelecao; }
-    public int getValorPico()      { return valorPico; }
-    public int getPremios()        { return premios; }
-    public boolean isSuperTrunfo() { return superTrunfo; }
-    public String getWikiPage()    { return wikiPage; }
+    public int getId()               { return id; }
+    public String getCodigo()        { return codigo; }
+    public String getNome()          { return nome; }
+    public String getContinente()    { return continente; }
+    public int getBiodiversidade()   { return biodiversidade; }
+    public int getEconomia()         { return economia; }
+    public int getTerritorio()       { return territorio; }
+    public int getPopulacao()        { return populacao; }
+    public int getEsportes()         { return esportes; }
+    public boolean isSuperTrunfo()   { return superTrunfo; }
+    public String getPaisCodigo()    { return paisCodigo; }
 
     @Override
     public String toString() {

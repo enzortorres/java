@@ -25,20 +25,21 @@ public class CartaDAO {
 
                 String[] c = linha.split(",", -1);
 
-                int     id          = Integer.parseInt(c[0].trim());
-                String  codigo      = c[1].trim();
-                String  nome        = c[2].trim();
-                String  posicao     = c[3].trim();
-                int     gols        = Integer.parseInt(c[4].trim());
-                int     titulos     = Integer.parseInt(c[5].trim());
-                int     golsSel     = Integer.parseInt(c[6].trim());
-                int     valorPico   = Integer.parseInt(c[7].trim());
-                int     premios     = Integer.parseInt(c[8].trim());
-                boolean superTrunfo = c[9].trim().equalsIgnoreCase("true");
-                String  wikiPage    = c[10].trim();
+                int     id             = Integer.parseInt(c[0].trim());
+                String  codigo         = c[1].trim();
+                String  nome           = c[2].trim();
+                String  continente     = c[3].trim();
+                int     biodiversidade = Integer.parseInt(c[4].trim());
+                int     economia       = Integer.parseInt(c[5].trim());
+                int     territorio     = Integer.parseInt(c[6].trim());
+                int     populacao      = Integer.parseInt(c[7].trim());
+                int     esportes       = Integer.parseInt(c[8].trim());
+                boolean superTrunfo    = c[9].trim().equalsIgnoreCase("true");
+                String  paisCodigo     = c[10].trim();
 
-                cartas.add(new Carta(id, codigo, nome, posicao,
-                        gols, titulos, golsSel, valorPico, premios, superTrunfo, wikiPage));
+                cartas.add(new Carta(id, codigo, nome, continente,
+                        biodiversidade, economia, territorio, populacao,
+                        esportes, superTrunfo, paisCodigo));
             }
 
         } catch (IOException e) {
