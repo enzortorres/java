@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module TDE02objectInstanceWithReflection {
+}

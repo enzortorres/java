@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Lenovo\Documents\GitHub\java\estudos\faculdade\SistemasDistribuidos\aulas\.metadata\.plugins\org.eclipse.jdt.core
+3079753527.index
+1865797976.index
+1351656521.index
